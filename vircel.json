@@ -6,7 +6,7 @@
         "use":"@version/node"
     }
    ],
-  "routes:"[
+  "routes":[
        {
         "src":"/(.*)",
         "deste":"/"
