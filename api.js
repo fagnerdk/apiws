@@ -6,7 +6,7 @@ const app = express()
 import parser from "body-parser";
 const urlencodedpase = parser.urlencoded({ extended: false });
 
-//app.use(express.json())
+app.use(express.json())
 import puppeteer from 'puppeteer'
 
 console.log('o robo esta ligado ')
