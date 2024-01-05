@@ -49,7 +49,7 @@ app.get("/kaio1", function (req, res) {
 })*/
 
 
-//setInterval(()=>{b1();;console.log('ok') },20000)
+setInterval(()=>{b1();;console.log('ok') },20000)
  
 
 app.listen(process.env.PORT || 3000)
