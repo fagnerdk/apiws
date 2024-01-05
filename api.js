@@ -6,12 +6,12 @@ const app = express()
 import parser from "body-parser";
 const urlencodedpase = parser.urlencoded({ extended: false });
 
-app.use(express.json())
+//app.use(express.json())
 
 
-console.log('o robo esta ligado ')
+//console.log('o robo esta ligado ')
 
-const pl = ['vale3','petr4']
+/*const pl = ['vale3','petr4']
 
 
 async function b1(a) {
@@ -36,7 +36,7 @@ async function b1(a) {
   await browser.close()
  
  
-}
+}*/
 
 
 /*app.get("/kaio", function (req, res) {
@@ -49,7 +49,7 @@ app.post("/kaio1",urlencodedpase,function (req, res) {
 })
 
 
-setInterval(()=>{b1();;console.log('ok') },20000)
+//setInterval(()=>{b1();;console.log('ok') },20000)
  
 
 app.listen(process.env.PORT || 3000)
