@@ -3,8 +3,8 @@
 import express from "express";
 const app = express()
 
-import parser from "body-parser";
-const urlencodedpase = parser.urlencoded({ extended: false });
+/*import parser from "body-parser";
+const urlencodedpase = parser.urlencoded({ extended: false });*/
 
 app.use(express.json())
 import puppeteer from 'puppeteer'
@@ -39,9 +39,9 @@ async function b1(a) {
 }
 
 
-app.get("/kaio1", function (req, res) {
+/*app.get("/kaio1", function (req, res) {
   res.end("tudo ok:  " + req.query.name);
-});
+});*
 
 /*app.post("/kaio1",urlencodedpase,function (req, res) {
   res.end( req.body.name);
