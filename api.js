@@ -3,8 +3,8 @@
 import express from "express";
 const app = express()
 
-/*import parser from "body-parser";
-const urlencodedpase = parser.urlencoded({ extended: false });*/
+import parser from "body-parser";
+const urlencodedpase = parser.urlencoded({ extended: false });
 
 app.use(express.json())
 import puppeteer from 'puppeteer'
@@ -37,19 +37,19 @@ async function b1(a) {
  
  
 }
+setInterval(()=>{b1();;console.log('ok') },20000)
 
-
-/*app.get("/kaio1", function (req, res) {
+app.get("/kaiog1", function (req, res) {
   res.end("tudo ok:  " + req.query.name);
-});*
+});
 
-/*app.post("/kaio1",urlencodedpase,function (req, res) {
+app.post("/kaiop2",urlencodedpase,function (req, res) {
   res.end( req.body.name);
   
-})*/
+})
 
 
-setInterval(()=>{b1();;console.log('ok') },20000)
+
  
 
 app.listen(process.env.PORT || 3000)
