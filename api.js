@@ -6,7 +6,7 @@ const app = express()
 import parser from "body-parser";
 const urlencodedpase = parser.urlencoded({ extended: false });
 
-app.use(express.json())
+/*app.use(express.json())
 import puppeteer from 'puppeteer'
 
 console.log('o robo esta ligado ')
@@ -30,22 +30,29 @@ async function b1(a) {
 
   console.log(x)
 
-  app.get('/valo', (req, res) => res.json({"divdendo":{'vale3':x,'va':x}})) 
+  app.get('/valo', (req, res) => res.json({"divdendo":{'vale3':x}})) 
 
 
  await browser.close()
-}
-setInterval(()=>{b1();;console.log('ok') },20000)
+}*/
 
-app.get("/kaiog1", function (req, res) {
+/*app.get("/kaio", function (req, res) {
   res.end("tudo ok:  " + req.query.name);
+});*/
+
+app.post("/kaio",urlencodedpase,function (req, res) {
+  res.end(req.body.name);
+  console.log(req.body.name)
 });
+/*
+try {
+  setInterval(()=>{b1();;console.log('buscando valo ...') },20000)
+} catch (erro) {
+  console.log(erro.browser)
+  setInterval(()=>{b1();;console.log('segunda tentativa buscando valo ...') },20000)
+}*/
 
-app.post("/kaiop2",urlencodedpase,function (req, res) {
-  res.end( req.body.name);
-  
-})
 
- 
+
 
 app.listen(process.env.PORT || 3000)
