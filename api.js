@@ -36,9 +36,9 @@ async function b1(a) {
  await browser.close()
 }*/
 
-/*app.get("/kaio", function (req, res) {
+app.get("/kaio1", function (req, res) {
   res.end("tudo ok:  " + req.query.name);
-});*/
+});
 
 app.post("/kaio",urlencodedpase,function (req, res) {
   res.end(req.body.name);
